@@ -201,3 +201,29 @@
 // console.log(array);
 // array.push(4,5,6);
 // console.log(array);
+
+//- Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+
+
+// function zeroMover(arr = []) {
+//     let zero = []
+//     console.log(arr)
+//     for (let i = 0; i < arr.length; i++) {
+//         const aElement = arr[i];
+//         if (aElement === 0) {
+//             arr.splice(i, 1);
+//             zero.push(0);
+//             i--;
+//         }
+//     }
+//     console.log(arr);
+//     console.log(zero);
+//     console.log(arr.concat(zero));
+// }
+//
+// zeroMover([1,0,6,0,3])

@@ -110,8 +110,17 @@
 // console.log(car.increaseMaxSpeed(200));
 // console.log(car.addDriver('igor','demnok'));
 //
+function showFullName() {
+    alert( this.firstName + " " + this.lastName );
+}
 
+var user = {
+    firstName: "Василий",
+    lastName: "Петров"
+};
 
+// функция вызовется с this=user
+showFullName.call(user) // "Василий Петров"
 //-створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити 10 попелюшок , покласти їх в масив.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
